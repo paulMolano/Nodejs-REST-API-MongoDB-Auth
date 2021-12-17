@@ -13,7 +13,24 @@ const userSchema = new Schema({
         type: String,
         required: true
     },
-    roles: []
+    roles: [{
+        ref: "Role",
+        type: Schema.Types.ObjectId
+    }]
+},{
+    timestamps: true,
+    versionKey: false
 })
 
+
+userSchema.statics.encryptPassword = async(password)=>{
+
+}
+
+userSchema.statics.comparePassword = async(password, receivedPassword)=>{
+    
+}
+
+
 export default model('User', userSchema)
+

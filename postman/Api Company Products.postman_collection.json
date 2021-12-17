@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "1f616bf3-d41c-40ca-a99b-0bfeca586c4d",
+		"name": "Api Company Products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "/products/",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\": \"laptop hp\",\r\n\"category\": \"laptops\",\r\n\"price\": 699.99,\r\n\"imgURL\": \"https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_83755665/fee_325_225_png\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/products/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"products",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/products/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\": \"laptop hp\",\r\n\"category\": \"laptops\",\r\n\"price\": 699.99,\r\n\"imgURL\": \"https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_83755665/fee_325_225_png\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/products/61bc6df6b9b8435a2d917755",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"products",
+								"61bc6df6b9b8435a2d917755"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/products/productId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\": \"laptop hp\",\r\n\"category\": \"laptops\",\r\n\"price\": 699.99,\r\n\"imgURL\": \"https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_83755665/fee_325_225_png\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/products/61bc6df6b9b8435a2d917755",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"products",
+								"61bc6df6b9b8435a2d917755"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/products/productId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\": \"laptop hp\",\r\n\"category\": \"laptops\",\r\n\"price\": 699.99,\r\n\"imgURL\": \"https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_83755665/fee_325_225_png\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/products/61bc6df6b9b8435a2d917755",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"products",
+								"61bc6df6b9b8435a2d917755"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/products/productId",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\": \"laptop hp\",\r\n\"category\": \"laptops\",\r\n\"price\": 699.99,\r\n\"imgURL\": \"https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_83755665/fee_325_225_png\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/products/61bc6df6b9b8435a2d917755",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"products",
+								"61bc6df6b9b8435a2d917755"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

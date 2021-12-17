@@ -8,6 +8,9 @@ const app = express()
 //Metodo para guardar una variable en express
 app.set('pkg', pkg)
 
+//Para que lea los archivos en formato json
+app.use(express.json())
+
 //Middleware para ver en consola cada vez que hacen una peticion a nuestro servidor
 app.use(morgan('dev'))
 

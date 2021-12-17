@@ -3,13 +3,13 @@ import User from '../models/User'
 export const signUp = async (req, res) =>{
     const {username, email, password, roles} = req.body;
 
-    const user = new User({
-        username,
-        email,
-        password
+    const newUser = new User({
+        username: username,
+        email: email,
+        password: await User.encryptPassword(password),
     })
 
-    console.log(req.body);
+    console.log(newUser);
     res.json('signup')
 }
 
